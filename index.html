@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Pêndulo Simples</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        #container {
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        input[type="number"] {
+            width: 60px;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <h1>Pêndulo Simples</h1>
+        <label for="amplitude">Amplitude (metros):</label>
+        <input type="number" id="amplitude" step="0.1" value="1">
+        <br>
+        <label for="comprimento">Comprimento (metros):</label>
+        <input type="number" id="comprimento" step="0.1" value="1">
+        <br>
+        <label for="tempo">Tempo (segundos):</label>
+        <input type="number" id="tempo" step="0.1" value="0">
+        <br>
+        <button onclick="calcularPendulo()">Calcular</button>
+        <br>
+        <h2>Resultados:</h2>
+        <p>Posição: <span id="posicao"></span> metros</p>
+        <p>Velocidade: <span id="velocidade"></span> m/s</p>
+        <p>Aceleração: <span id="aceleracao"></span> m/s²</p>
+    </div>
